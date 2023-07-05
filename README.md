@@ -192,54 +192,54 @@ Ambiente para estudo dos principais frameworks big data em docker.
   
   Aqui subimos o container do Kafka:
   
-  ● Iniciando o Docker: docker-compose up -d kafka 
+    ● Iniciando o Docker: docker-compose up -d kafka 
   
   Após subir o container e garantir que ele está rodando, podemos entrar no bash:
   
-  ● Acesso ao host kafka: docker exec -it kafka bash 
+    ● Acesso ao host kafka: docker exec -it kafka bash 
   
   Dentro do bash, podemos alterar o diretório até a pasta bin, para então poder criar os tópicos:
   
-  ● Diretório da Kafka: /opt/kafka/bin
+    ● Diretório da Kafka: /opt/kafka/bin
   
   Após acessar o diretório bin, você precisa utilizar o script kafka-topics no diretório bin, para criar os novos tópicos:
   
   O comando utilizado para a criação de tópicos é esse:
   
-   ./kafka-topics.sh --create --zookeeper zookeeper:2181 --replication-factor 1 --partitions 1 --topic <nome-do-topico> 
+     ./kafka-topics.sh --create --zookeeper zookeeper:2181 --replication-factor 1 --partitions 1 --topic <nome-do-topico> 
    
-    Onde: 
+   Onde: 
     
-    --zookeeper é o conjunto de zookeeper
+   --zookeeper é o conjunto de zookeeper
     
-    --replication-factor é o número de réplica para o tópico 
+   --replication-factor é o número de réplica para o tópico 
     
-    --partitions é o número de partições desejado para aquele tópico 
+   --partitions é o número de partições desejado para aquele tópico 
     
-    --topic é o nome do tópico a ser criado 
+   --topic é o nome do tópico a ser criado 
     
   Ao criar um tópico, é exibida a mensagem: Created topic <nome-do-topico>.
     
   Para listar os tópicos existentes utilizamos o comando abaixo: 
   
-  ./kafka-topics.sh --list --zookeeper zookeeper:2181 
+    ./kafka-topics.sh --list --zookeeper zookeeper:2181 
   
   Para verificar as configurações do tópico: 
   
-  ./kafka-topics.sh --describe --zookeeper zookeeper:2181 --topic <nome-do-topico>
+    ./kafka-topics.sh --describe --zookeeper zookeeper:2181 --topic <nome-do-topico>
   
 
 ## Agora que já sabemos criar tópicos utilizando o Kafka, vamos utilizar o “producer” para criar mensagens em realtime, e em outro terminal, utilizar o “consumer”, que irá receber as mensagens criadas pelo “producer” instantaneamente.
 
 Para isso vamos usar os comandos abaixo: 
 
-./kafka-console-producer.sh --broker-list kafka:9092 --topic <nome-do-topico>
+  ./kafka-console-producer.sh --broker-list kafka:9092 --topic <nome-do-topico>
 
 Após a abertura do “producer”, basta digitar as mensagens.
 
 Em outro terminal, vá até o diretório bin novamente e execute o “consumer”.
 
-./kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic <nome-do-topico> --from-beginning
+  ./kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic <nome-do-topico> --from-beginning
 
 Ao iniciar o consumer, todas as mensagens serão recebidas no console. Inclusive as mensagens enviadas antes da abertura do consumer.
 
@@ -248,7 +248,7 @@ Obs: Por padrão, a porta utilizada pelo Kafka Broker é a 9092, podendo ser alt
 
 ## Depois de fazermos o envio e recebimento utilizando o terminal, podemos fazer também o mesmo, porém, utilizando Python. 
 
-## Dentro do repositório você vai encontrar os scripts: Producer e Consumer. 
+**Dentro do repositório você vai encontrar os scripts: Producer e Consumer.**
 
 Para criar novas mensagens através do Python, você vai precisar criar um tópico no console. Eu criei o tópico chamado “teste”. Por isso, ao abrir o script, você vai encontrar no código o seguinte: topic='teste'.
 
@@ -256,6 +256,6 @@ Mas você pode criar com o nome que preferir.
 
 Com isso terminamos nosso treinamento de mensageria utilizando o Apache Kafka. Como podem ver, é algo introdutório e que nos foi apresentado durante o curso de pós-graduação em Ciência de Dados e Big Data da PUC-Minas.
 
-## Obrigado a todos e até!!!
+**Obrigado a todos e até!!!**
 
 
