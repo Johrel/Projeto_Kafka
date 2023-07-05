@@ -57,7 +57,7 @@ Ambiente para estudo dos principais frameworks big data em docker.
 #### Em um terminal/DOS, dentro diretório docker, realizar o clone do projeto no github
           git clone https://github.com/Johrel/Projeto_Kafka.git
           
-#### No diretório bigdata_docker vai existir os seguintes objetos
+#### No diretório Projeto_Kafka vai existir os seguintes objetos
 ![ls](ls.JPG)
 
    
@@ -65,7 +65,7 @@ Ambiente para estudo dos principais frameworks big data em docker.
    
   *No Windows abrir PowerShell, do Linux um terminal*
 
-### No terminal, no diretorio bigdata_docker, executar o docker-compose
+### No terminal, no diretorio Projeto_Kafka executar o docker-compose
           docker-compose up -d        
 
 ### Verificar imagens e containers
