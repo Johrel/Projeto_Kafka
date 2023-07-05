@@ -233,13 +233,13 @@ Ambiente para estudo dos principais frameworks big data em docker.
 
 Para isso vamos usar os comandos abaixo: 
 
-  ./kafka-console-producer.sh --broker-list kafka:9092 --topic <nome-do-topico>
+    ./kafka-console-producer.sh --broker-list kafka:9092 --topic <nome-do-topico>
 
 Após a abertura do “producer”, basta digitar as mensagens.
 
 Em outro terminal, vá até o diretório bin novamente e execute o “consumer”.
 
-  ./kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic <nome-do-topico> --from-beginning
+    ./kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic <nome-do-topico> --from-beginning
 
 Ao iniciar o consumer, todas as mensagens serão recebidas no console. Inclusive as mensagens enviadas antes da abertura do consumer.
 
