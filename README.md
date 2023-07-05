@@ -246,7 +246,9 @@ Ao iniciar o consumer, todas as mensagens serão recebidas no console. Inclusive
 
 Obs: Por padrão, a porta utilizada pelo Kafka Broker é a 9092, podendo ser alterada no arquivo de configuração. 
 
-## Depois de fazermos o envio e recebimento utilizando o terminal, podemos fazer também o mesmo, porém, utilizando Python. Dentro do repositório você vai encontrar os scripts: Producer e Consumer. 
+## Depois de fazermos o envio e recebimento utilizando o terminal, podemos fazer também o mesmo, porém, utilizando Python. 
+
+## Dentro do repositório você vai encontrar os scripts: Producer e Consumer. 
 
 Para criar novas mensagens através do Python, você vai precisar criar um tópico no console. Eu criei o tópico chamado “teste”. Por isso, ao abrir o script, você vai encontrar no código o seguinte: topic='teste'.
 
