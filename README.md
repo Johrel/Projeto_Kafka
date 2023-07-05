@@ -211,7 +211,7 @@ Ambiente para estudo dos principais frameworks big data em docker.
    
    Onde: 
     
-   --zookeeper é o conjunto de zookeeper
+   --zookeeper Desempenha um papel fundamental no funcionamento e na escalabilidade, fornecendo recursos de gerenciamento e coordenação para o cluster do Kafka.
     
    --replication-factor é o número de réplica para o tópico 
     
