@@ -186,6 +186,7 @@ Ambiente para estudo dos principais frameworks big data em docker.
 * https://gethue.com/
 * https://github.com/yahoo/CMAK
 * https://www.docker.com/
+##_________________________________________________________________________________________________________________________________________________________________________________________________________________________
 
 ## Para replicar em sua máquina esse projeto/treinamento, você pode começar criando uma pasta local, e depois clonar este repositório dentro da mesma. Para isso, basta seguir os procedimentos acima.
   Os comandos que utilizamos para dar início ao Kafka foram estes:
