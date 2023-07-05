@@ -218,7 +218,7 @@ Ambiente para estudo dos principais frameworks big data em docker.
     
    --topic é o nome do tópico a ser criado 
     
-  Ao criar um tópico, é exibida a mensagem: Created topic <nome-do-topico>.
+  Ao criar um tópico, é exibida a mensagem: Created topic "<nome-do-topico>".
     
   Para listar os tópicos existentes utilizamos o comando abaixo: 
   
