@@ -28,7 +28,7 @@
 <img height="180em" src="https://github-readme-stats.vercel.app/api?username=johrel&show_icons=true&theme=dracula&include_all_commits=true&count_private=true"/>
 </div>
 
-# BIG DATA ECOSYSTEM COM DOCKER
+<h1 align="center"># BIG DATA ECOSYSTEM COM DOCKER</h1>
 
 Ambiente para estudo dos principais frameworks big data em docker.
 <br> Esse setup vai criar dockers com os frameworks HDFS, HBase, Hive, Presto, Spark, Jupyter, Hue, Mongodb, Metabase, Nifi, kafka, Mysql e Zookeeper com a seguinte arquitetura:
