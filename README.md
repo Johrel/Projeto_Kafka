@@ -188,7 +188,7 @@ Ambiente para estudo dos principais frameworks big data em docker.
 * https://www.docker.com/
 
 ## 
-## Para replicar esse projeto/treinamento, você pode começar criando uma pasta local, e depois clonar este repositório dentro da mesma. Para isso, basta seguir os procedimentos acima.
+## Para replicar esse projeto/treinamento, você pode começar criando uma pasta local, e depois clonar este repositório dentro da mesma. Após clonar o repositório, podemos iniciar o docker e dar sequência utilizando os comandos abaixo.
   Os comandos que utilizamos para dar início ao Kafka foram estes:
   
   Aqui subimos o container do Kafka:
